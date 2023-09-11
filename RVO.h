@@ -56,6 +56,13 @@ public:
         return o;
     }
 
+    static void showCopyElision(){
+        auto returnValue = makeCopyElisionObservable();
+        if((&returnValue == ptr)){
+            std::cout << "It indeed is the same object" << std::endl;
+        } else { std::cout << "Something went wrong" << std::endl; }
+    }
+
     static Observable showImplicitMove(){
         Observable o;
         Observable u;
