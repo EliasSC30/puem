@@ -62,14 +62,16 @@ public:
             std::cout << "It indeed is the same object" << std::endl;
         } else { std::cout << "Something went wrong" << std::endl; }
     }
+    static Observable provocateImplicitMove(Observable o){
+        return o;
+    }
 
-    static Observable showImplicitMove(){
-        Observable o;
+    static void showImplicitMove(){
         Observable u;
-        int runTimeDecision{};
-        std::cout << "Make a decision\n";
-        std::cin >> runTimeDecision;
-        return runTimeDecision > 2 ? u :o;
+       // int runTimeDecision{};
+        //std::cout << "Make a decision\n";
+        //std::cin >> runTimeDecision;
+        provocateImplicitMove(u);
     }
 
 };

@@ -23,11 +23,11 @@ public:
     }
 
     //Move constructor
-    Moveable(Moveable&& rVal){
+    Moveable(Moveable&& rVal) noexcept {
         std::cout << "Move-constructed Moveable" << std::endl;
     }
     //Move assignment operator
-    Moveable& operator=(Moveable&& rVal){
+    Moveable& operator=(Moveable&& rVal) noexcept {
         std::cout << "Move-assigned Moveable" << std::endl;
         return *this;
     }

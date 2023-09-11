@@ -12,7 +12,7 @@ int main() {
 
     //RVO::showCopyElision();
 
-    //TODO: RVO::showImplicitMove();
+    TODO: RVO::showImplicitMove();
     //Moveable::showMoveSemantics();
     return 0;
 }
