@@ -5,12 +5,12 @@
 // #include "CallBy.h"
 
 #include "RuleOf.h"
-
-
-
+#include "CallBy.h"
+#include "RVO.h"
+#include "Moveable.h"
 
 int main() {
-    //CallBy::showCallBys();
+    CallBy::showCallBys();
 
     //RVO::showCopyElision();
 
@@ -25,5 +25,7 @@ int main() {
     //BadString::ruleOfFive();
     // GoodString::ruleOfFive();
     return 0;
+
+
 }
 
