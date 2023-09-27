@@ -1,26 +1,24 @@
 #include <iostream>
 
-// #include "RVO.h"
-// #include "Moveable.h"
-// #include "CallBy.h"
-
 #include "RuleOf.h"
 #include "CallBy.h"
 #include "RVO.h"
 #include "Moveable.h"
 
 int main() {
-    CallBy::showCallBys();
+    // CallBy::showCallBys();
 
-    //RVO::showCopyElision();
+    // RVO::showCopyElision();
 
-    TODO: //RVO::showImplicitMove();
+    TODO: // RVO::showImplicitMove();
     //Moveable::showMoveSemantics();
 
     /* Rule Of... */
-    // Person::example();
-    // BadString::example();
-    // GoodString::example();
+
+    //Person::example();
+
+    BadString::ruleOfThree();
+    // GoodString::ruleOfThree();
 
     //BadString::ruleOfFive();
     // GoodString::ruleOfFive();

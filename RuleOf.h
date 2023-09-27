@@ -14,20 +14,32 @@
 
 class Person {
 public:
-    Person(std::string name) : name(std::make_unique<std::string>(std::move(name))) {}
+
+    explicit Person(std::string name) : name(std::make_shared<std::string>(std::move(name))) {}
 
     void introduce() const {
         std::cout << "Hello, my name is " << *name << std::endl;
     }
 
     static void example(){
+        // Konstructor
         Person alice("Alice");
+        // Kopier Konstruktor
+        Person alice2(alice);
+        // Kopier Zuweisung
+        Person alice3 = alice2;
+        // Move Konstruktor
+        Person alice4(std::move(alice2));
+        alice4.introduce();
+        // Move Zuweisung
+        Person alice5 = std::move(alice3);
         alice.introduce();
     }
 
 private:
-    std::unique_ptr<std::string> name;
+    std::shared_ptr<std::string> name;
 };
+
 
 class BadString {
 public:

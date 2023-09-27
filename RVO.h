@@ -30,21 +30,26 @@ class RVO {
 public:
     class Observable{
         std::vector<std::string> names{};
+        inline static int idCount{};
+        int id;
     public:
 
         Observable(){
-            std::cout << "Observable was constructed" << std::endl;
+            id = idCount++;
+            std::cout << "Observable was constructed; ID: " << id << std::endl;
 
         }
         Observable(const Observable& other){
-            std::cout << "Observable got copy-constructed" << std::endl;
+            id = idCount++;
+            std::cout << "Observable got copy-constructed; ID: " << id << std::endl;
         }
         Observable(Observable&& other){
-            std::cout << "Observable got move constructed" << std::endl;
+            id = idCount++;
+            std::cout << "Observable got move constructed; ID; " << id << std::endl;
         }
 
         ~Observable(){
-            std::cout << "Deleted Observable" << std::endl;
+            std::cout << "Deleted Observable; ID: " << id << std::endl;
         }
     };
 
@@ -68,9 +73,6 @@ public:
 
     static void showImplicitMove(){
         Observable u;
-       // int runTimeDecision{};
-        //std::cout << "Make a decision\n";
-        //std::cin >> runTimeDecision;
         provocateImplicitMove(u);
     }
 
