@@ -8,7 +8,7 @@
 #include "DoublyLinkedList.h"
 
 int main() {
-    //Stack::showStackFrames();
+    // Stack::showStackFrames();
 
     // CallBy::showCallBys();
 
@@ -16,18 +16,18 @@ int main() {
 
     // RVO::showImplicitMove();
 
-    //Moveable::showMoveSemantics();
+    // Moveable::showMoveSemantics();
 
     /* Rule Of... */
 
-    //Person::example();
+    // Person::example();
 
-    //BadString::ruleOfThree();
+    // BadString::ruleOfThree();
     // GoodString::ruleOfThree();
 
-    //BadString::ruleOfFive();
+    // BadString::ruleOfFive();
     // GoodString::ruleOfFive();
-    DoublyLinkedList::showDoublyLinkedList();
+    // DoublyLinkedList::showDoublyLinkedList();
 
     return 0;
 
