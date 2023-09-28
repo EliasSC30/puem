@@ -39,15 +39,14 @@ public:
     DoublyLinkedList() : head(nullptr), tail(nullptr) {}
 
     void append(int data) {
-
-        Node newNode = Node(data);
+        Node* newNode = new Node{data};
         if (!head) {
-            head = &newNode;
-            tail = &newNode;
+            head = newNode;
+            tail = newNode;
         } else {
-            newNode.setXOR(tail, nullptr);
-            tail->setXOR(tail->getPrev(nullptr), &newNode);
-            tail = &newNode;
+            newNode->setXOR(tail, nullptr);
+            tail->setXOR(tail->getPrev(nullptr), newNode);
+            tail = newNode;
         }
     }
 
