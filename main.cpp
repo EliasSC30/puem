@@ -5,6 +5,7 @@
 #include "RVO.h"
 #include "Moveable.h"
 #include "Stack.h"
+#include "DoublyLinkedList.h"
 
 int main() {
     //Stack::showStackFrames();
@@ -26,6 +27,8 @@ int main() {
 
     //BadString::ruleOfFive();
     // GoodString::ruleOfFive();
+    DoublyLinkedList::showDoublyLinkedList();
+
     return 0;
 
 
