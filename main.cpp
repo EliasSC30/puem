@@ -10,7 +10,7 @@
 
 int main() {
 
-    // DoublyLinkedList::showDoublyLinkedList();
+    DoublyLinkedList::showDoublyLinkedList();
 
     // Stack::showStackFrames();
 

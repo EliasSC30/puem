@@ -19,6 +19,10 @@ class DoublyLinkedList {
 
         Node(int data) : data(data), xor_ptr(nullptr) {}
 
+        ~Node(){
+            delete xor_ptr;
+        }
+
         void setXOR(Node* prev, Node* next) {
             xor_ptr = reinterpret_cast<Node*>(uintptr_t(prev) ^ uintptr_t(next));
         }
@@ -37,6 +41,17 @@ class DoublyLinkedList {
 
 public:
     DoublyLinkedList() : head(nullptr), tail(nullptr) {}
+
+    ~DoublyLinkedList() {
+        Node* current = head;
+        Node* prev = nullptr;
+        while (current) {
+            Node* temp = current;
+            current = current->getNext(prev);
+            delete temp;
+            prev = temp;
+        }
+    }
 
     void append(int data) {
         Node* newNode = new Node{data};
