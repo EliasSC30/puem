@@ -6,6 +6,7 @@
 #include "Moveable.h"
 #include "Stack.h"
 #include "DoublyLinkedList.h"
+#include "pueminCpp.h"
 
 int main() {
     // Stack::showStackFrames();
@@ -27,6 +28,9 @@ int main() {
 
     // BadString::ruleOfFive();
     // GoodString::ruleOfFive();
+
+    forwardExample();
+
     // DoublyLinkedList::showDoublyLinkedList();
 
     return 0;
