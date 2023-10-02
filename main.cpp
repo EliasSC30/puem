@@ -9,6 +9,9 @@
 #include "pueminCpp.h"
 
 int main() {
+
+    // DoublyLinkedList::showDoublyLinkedList();
+
     // Stack::showStackFrames();
 
     // CallBy::showCallBys();
@@ -29,9 +32,9 @@ int main() {
     // BadString::ruleOfFive();
     // GoodString::ruleOfFive();
 
-    forwardExample();
+    //forwardExample();
 
-    // DoublyLinkedList::showDoublyLinkedList();
+
 
     return 0;
 

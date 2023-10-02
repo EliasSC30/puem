@@ -75,7 +75,7 @@ public:
     }
 
     static void showDoublyLinkedList(){
-        DoublyLinkedList myList;
+        DoublyLinkedList myList{};
 
         myList.append(1);
         myList.append(2);
