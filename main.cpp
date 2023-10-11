@@ -10,7 +10,7 @@
 
 int main() {
 
-    DoublyLinkedList::showDoublyLinkedList();
+    // DoublyLinkedList::showDoublyLinkedList();
 
     // Stack::showStackFrames();
 
@@ -31,10 +31,6 @@ int main() {
 
     // BadString::ruleOfFive();
     // GoodString::ruleOfFive();
-
-    //forwardExample();
-
-
 
     return 0;
 

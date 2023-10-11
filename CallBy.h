@@ -1,7 +1,3 @@
-//
-// Created by Oezcan, Elias on 11.09.23.
-//
-
 #ifndef PUEM_CALLBY_H
 #define PUEM_CALLBY_H
 #include <iostream>

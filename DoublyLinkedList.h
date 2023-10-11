@@ -1,6 +1,3 @@
-//
-// Created by Forslund, Collin on 28.09.23.
-//
 
 #ifndef PUEM_DOUBLYLINKEDLIST_H
 #define PUEM_DOUBLYLINKEDLIST_H
